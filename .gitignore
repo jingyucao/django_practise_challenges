@@ -1,0 +1,119 @@
+# ------------------------- Linux
+*~
+
+
+# KDE
+.directory
+
+
+# ------------------------- OSX
+.DS_Store
+
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+
+# ------------------------- vim/PyCharm/vscode
+.*.sw[a-z]
+*.un~
+Session.vim
+.idea
+.vscode
+
+
+# ------------------------- Python
+*.py[co]
+
+# Packages
+*.egg
+*.egg-info
+build
+eggs
+parts
+bin
+var
+sdist
+develop-eggs
+.installed.cfg
+
+# Installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+coverage
+.coverage*
+.tox
+*.tox/*
+.pytest_cache
+
+#Translations
+*.mo
+
+# jupyter notebook
+*.ipynb
+
+
+# ------------------------ Django
+*.log
+*.pot
+*.pyc
+settings_local.py
+
+
+# ------------------------ MyPy
+.mypy_cache
+
+
+# ------------------------ Pyenv
+.python-version
+
+
+# ------------------------ direnv
+.envrc
+
+# ------------------------ Custom
+.cache
+.tmp
+*.sqlite3
+*.pid
+htmlcov
+docs/build
+node_modules
+frontend/lib
+/frontend/dist/
+*.orig
+*.sql
+*.sql.gz
+!/platform_tools/mapool_platform/anonymize.sql
+!/deployment/compact.sql
+media
+mapool/static/apps
+mapool/maintenance/static/apps
+mapool/.env*
+celerybeat-schedule
+pip-wheel-metadata
+dist
+tests.html
+local_dev_data
+*.xlsx
+!Stammwerkstätten.xlsx
+!mapool/inspections/migrations/data/pi_new_checks.xlsx
+*_BASE_*.py
+*_LOCAL_*.py
+*_REMOTE_*.py
+*.json
+!/platform_tools/mapool_platform_files/minio_policies/*.json
+frontend/cypress/videos/
+frontend/cypress/screenshots/
+docs/mapool-api/index.md
+*.7z
+*.xz
+
+# symlinked folder
+frontend/docs
+.playwright
