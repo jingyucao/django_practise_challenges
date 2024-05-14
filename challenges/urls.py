@@ -8,5 +8,7 @@ from . import views
 # ]
 
 # with the <>, we don't need to create a new path for each month
-urlpatterns = [path('<int:month>', views.monthly_challenge_by_number)]
-urlpatterns = [path('<str:month>', views.monthly_challenge)]
+urlpatterns = [
+    path("<int:month>", views.monthly_challenge_by_number),
+    path("<str:month>", views.monthly_challenge)
+]
