@@ -56,6 +56,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
+            BASE_DIR / 'templates'
             # no need to add each folder manually, simply add app to INSTALLED_APPS
             # BASE_DIR / 'challenges' / 'templates'
         ],

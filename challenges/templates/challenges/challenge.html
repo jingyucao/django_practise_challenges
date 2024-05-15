@@ -1,16 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{month_name|title}}</title>
-  </head>
-  <body>
-    <!-- title is a django template filter function, more: https://docs.djangoproject.com/en/5.0/ref/templates/builtins/ -->
-    <h1>{{month_name|title}} Challenge:</h1>
-    <h2>
-      {%if text is not None%} {{text}} {%else%} There is no Challenge setet yet.
-      {%endif%}
-    </h2>
-  </body>
-</html>
+{% extends "base.html" %} 
+
+{% block page_title %}{{month_name|title}}{% endblock %}
+
+{% block content %}
+<h1>{{month_name|title}} Challenge:</h1>
+<h2>
+  {%if text is not None%} {{text}} {%else%} There is no Challenge setet yet.
+  {%endif%}
+</h2>
+{% endblock %}
