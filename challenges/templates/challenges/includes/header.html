@@ -1,8 +1,14 @@
+{% load static %} {% block css_file %}
+<link rel="stylesheet" href='{% static "challenges/includes/header.css" %}' />
+{% endblock %}
+
 <header>
-  <a href="{% url 'index' %}"> All Challenges </a> 
-  {% comment %} with the include build in function, we can also use the variables from the templates {% endcomment %}
-  {% if month_name %}
-     from {{month_name}}
-  {% endif %}
-  <p>The acive page is: {{active_page}}.</p>
+  <div>
+    <a href="{% url 'index' %}">All Challenges</a>
+    {% comment %} with the include build in function, we can also use the variables from the templates {% endcomment %} 
+    {% if month_name %}
+    <p> from {{month_name}}.</p>
+    {% endif %}
+    <p>The acive page is: {{active_page}}.</p>
+  </div>
 </header>

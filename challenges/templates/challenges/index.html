@@ -1,4 +1,10 @@
 {% extends "base.html" %}
+{% load static %}
+
+{% comment %} by load static and use static function in href will generate the path to the css file {% endcomment %}
+{% block css_file %}
+    <link rel='stylesheet' href='{% static "challenges/challenges.css" %}'/>
+{% endblock %}
 
 {% block page_title %}Challenges {% endblock %}
 

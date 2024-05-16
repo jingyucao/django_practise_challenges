@@ -1,0 +1,33 @@
+header {
+  width: 100%;
+  height: 10rem;
+  background-color: #353535;
+}
+
+header div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  a:hover, a:active{
+    color: #cf54a6;
+  }
+
+  p {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0;
+  }
+}
+
+
