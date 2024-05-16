@@ -1,0 +1,8 @@
+<header>
+  <a href="{% url 'index' %}"> All Challenges </a> 
+  {% comment %} with the include build in function, we can also use the variables from the templates {% endcomment %}
+  {% if month_name %}
+     from {{month_name}}
+  {% endif %}
+  <p>The acive page is: {{active_page}}.</p>
+</header>

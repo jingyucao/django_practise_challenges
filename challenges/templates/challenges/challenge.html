@@ -3,6 +3,10 @@
 {% block page_title %}{{month_name|title}}{% endblock %}
 
 {% block content %}
+
+{% comment %} with keyword will pass variable to the included html {% endcomment %}
+{% include "challenges/includes/header.html" with active_page='challenge page' %}
+
 <h1>{{month_name|title}} Challenge:</h1>
 <h2>
   {%if text is not None%} {{text}} {%else%} There is no Challenge setet yet.

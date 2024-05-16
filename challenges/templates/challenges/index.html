@@ -3,6 +3,7 @@
 {% block page_title %}Challenges {% endblock %}
 
 {% block content %}
+{% include 'challenges/includes/header.html' with active_page='index page' %}
     <ul>
       {% for month in months %}
       {% comment %} url is a build in tag, it calls the 'monthly-challenge' url from urlpatterns, and give month as an argument {% endcomment %}
